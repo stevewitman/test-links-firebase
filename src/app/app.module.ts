@@ -8,6 +8,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 import { AppComponent } from './app.component';
 import { LinksComponent } from './links/links.component';
+import { LinksService } from './shared/links.service'
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { LinksComponent } from './links/links.component';
     }),
     AngularFireDatabaseModule,
   ],
-  providers: [],
+  providers: [LinksService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

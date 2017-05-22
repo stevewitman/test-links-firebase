@@ -3,7 +3,7 @@
 </div>
 
 <div>
-  <input placeholder="name" #name>
-  <input placeholder="url" #url>
-  <button class="btn btn-primary" (click)="send(name, url)">Send</button>
+  <input placeholder="name" #name required>
+  <input placeholder="url" #url required>
+  <button class="btn btn-primary" (click)="addLink(name, url)">Send</button>
 </div>
